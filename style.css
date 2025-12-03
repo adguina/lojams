@@ -10,6 +10,7 @@
   --white-color: #fff;
   --degrade: rgb(228, 190, 193);
   --fundo-menu: rgb(255, 255, 255);
+  --cor-link: #ff1493;
 
   /* fonte size */
   --font-size-s: 0.9rem;
@@ -45,7 +46,21 @@ header {
   padding: 0 20px;
   max-width: var(--site-max-width);
 }
-
+.section-title {
+  text-align: center;
+  padding: 60px 0 100px;
+  text-transform: uppercase;
+  font-size: var(--font-size-xl);
+}
+.section-title::after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  background: #6a5acd;
+}
 /* Estilo Nav-Bar */
 .logo-text {
   font-family: "Miniver", cursive;
@@ -99,6 +114,12 @@ header .navbar {
   background: var(--degrade);
   border: 1px solid var(--white-color);
 }
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+  display: none;
+}
+
+/* Hero section styling */
 
 .hero-section {
   padding: 0 30px;
@@ -198,6 +219,51 @@ header .navbar {
   /* box-shadow: 0 0 30px 10px #6a5acd; */
 }
 
+/* About section styling */
+.about-section {
+  padding: 120px;
+  background: var(--degrade);
+}
+.about-section .section-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-section .about-image-wrapper .about-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-section .about-details .section-title {
+  padding: 0;
+}
+/* minuto 31:58 */
+.about-section .about-details {
+  max-width: 50%;
+}
+.about-section .about-details .text {
+  line-height: 30px;
+  margin: 50px 0 30px;
+  text-align: center;
+  font-size: var(--font-size-m);
+}
+.about-section .social-link-list {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.about-section .social-link-list .social-link {
+  color: #6a5acd;
+  font-size: var(--font-size-l);
+  transition: 0.5s linear;
+}
+.about-section .social-link-list .social-link:hover {
+  color: white;
+  border: 1px solid var(--cor-link);
+  border-radius: 100%;
+}
 /* Responsivel */
 @media screen and (max-width: 900px) {
   :root {
@@ -206,10 +272,33 @@ header .navbar {
     --font-size-m: 1.5rem;
     --font-size-l: 1.8rem;
   }
+  body.show-mobile-menu header::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 192, 203, 0.8);
+  }
+  .navbar :where(#menu-close-button, #menu-open-button) {
+    display: block;
+    font-size: var(--font-size-l);
+  }
+  .navbar #menu-close-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .navbar #menu-open-button {
+    color: var(--white-color);
+  }
+
   .navbar .nav-menu {
     display: block;
     position: fixed;
-    left: 0;
+    left: -300px;
     top: 0;
     width: 300px;
     height: 100%;
@@ -218,11 +307,34 @@ header .navbar {
     align-items: center;
     padding: 100px;
     background: var(--white-color);
+    transition: left 0.2s ease;
+    z-index: 500;
+  }
+  body.show-mobile-menu .navbar .nav-menu {
+    left: 0;
   }
   .navbar .nav-menu .nav-link {
     color: black;
     display: block;
     margin-top: 17px;
     font-size: var(--font-size-l);
+  }
+
+  .hero-section .section-content {
+    gap: 50px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .hero-section .hero-details :is(.subtitle, .description) {
+    max-width: 100%;
+  }
+  .hero-section .hero-details .buttons {
+    justify-content: center;
+  }
+  .hero-section .hero-image-wrapper {
+    max-width: 270px;
+    margin-right: 0;
   }
 }

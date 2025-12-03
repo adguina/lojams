@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loja Bolsa MS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,6 +20,7 @@
           </h2>
         </a>
         <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
           <li class="nav-item">
             <a href="#" class="nav-link">Home</a>
           </li>
@@ -32,6 +37,7 @@
             <a href="#" class="nav-link">Contato</a>
           </li>
         </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
       </nav>
     </header>
     <main>
@@ -58,6 +64,28 @@
         </div>
       </section>
       <!-- end hero section -->
+      <!-- About section -->
+      <section class="about-section">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="./img/sobrems.png" alt="Sobre MS" class="about-image" />
+          </div>
+        <div class="about-details">
+          <h2 class="section-title">Sobre Nós</h2>
+          <p class="text">
+           Monica Sanches Bolsas é uma marca consagrada de bolsas e acessórios femininos, nascida em Itatiba–SP, que há mais de três décadas traduz com maestria a essência da feminilidade da mulher brasileira.
+Com um design moderno, autoral e inconfundível, a marca se destaca pela combinação harmoniosa entre beleza, praticidade e sofisticação.
+Ao longo de sua trajetória, consolidou presença em lojas de rua e shoppings, sempre oferecendo peças que refletem personalidade, elegância e o estilo único que tornou Monica Sanches referência no universo da moda feminina.
+          </p>
+          <div class="social-link-list">
+            <a href="" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- Fim section -->
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
