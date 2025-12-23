@@ -82,6 +82,9 @@ header {
     /* linha 1 */ 0 10px 8px rgba(255, 20, 147, 0.25),
     /* linha 2 */ 0 15px 12px rgba(255, 20, 147, 0.15); /* linha 3 */
 }
+.navbar .img-logo:hover {
+  cursor: url("./img/mouse.png") 16 16, auto;
+}
 
 .navbar .nav-logo .logo-text {
   color: black;
@@ -117,6 +120,7 @@ header .navbar {
   color: var(--white-color);
   background: var(--degrade);
   border: 1px solid var(--white-color);
+  cursor: url("./img/mouse.png") 16 16, auto;
 }
 
 .navbar :where(#menu-close-button, #menu-open-button) {
@@ -172,6 +176,7 @@ header .navbar {
   color: var(--white-color);
   background: #6a5acd;
   border: solid 2px transparent;
+  cursor: url("./img/mouse.png") 16 16, auto;
 }
 /* imagem */
 .hero-image-wrapper {
@@ -208,6 +213,7 @@ header .navbar {
 /* Toque final: animação de zoom suave no hover (opcional) */
 .hero-image-wrapper:hover img {
   transform: scale(1.08);
+  cursor: url("./img/mouse.png") 16 16, auto;
 }
 /* fim da imagem */
 
@@ -221,7 +227,7 @@ header .navbar {
 .hero-section .hero-image-wrapper:hover {
   transform: scale(1.15);
   /* box-shadow: 0 0 30px 10px #6a5acd; */
-   cursor: url('./img/bolsamsbr.png') 16 16, auto;
+  cursor: url("./img/bolsamsbr.png") 16 16, auto;
 }
 
 /* About section styling */
@@ -268,6 +274,7 @@ header .navbar {
   color: white;
   border: 1px solid var(--cor-link);
   border-radius: 100%;
+  cursor: url("./img/mouse.png") 16 16, auto;
 }
 /* Inicio Menu  Section */
 /* .menu-content .menu-list .menu-item .menu-image {
@@ -303,7 +310,7 @@ header .navbar {
   /* box-shadow: 0 15px 40px rgba(219, 145, 159, 0.4); */
   box-shadow: 0 10px 50px rgba(255, 175, 189, 0.25);
   border-radius: 15px;
- cursor: url('./img/bolsamsbr.png') 16 16, auto;
+  cursor: url("./img/bolsamsbr.png") 16 16, auto;
 }
 .menu-content .menu-list .menu-item .menu-image {
   max-width: 83%;
