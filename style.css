@@ -88,10 +88,10 @@ header {
   font-size: var(--font-size-xl);
   font-weight: 700;
 }
-header{
-   position: fixed;
-   width: 100%;
-   z-index: 500;
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 }
 header .navbar {
   display: flex;
@@ -221,6 +221,7 @@ header .navbar {
 .hero-section .hero-image-wrapper:hover {
   transform: scale(1.15);
   /* box-shadow: 0 0 30px 10px #6a5acd; */
+   cursor: url('./img/bolsamsbr.png') 16 16, auto;
 }
 
 /* About section styling */
@@ -292,6 +293,17 @@ header .navbar {
   flex-direction: column;
   justify-content: space-between;
   width: calc(100% / 3 - 110px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-content .menu-list .menu-item:hover {
+  /* Move o elemento para cima no eixo Y */
+  /* -10% da altura do próprio elemento */
+  transform: translateY(-10%);
+  /* Dica: Adicionar uma sombra maior quando sobe aumenta o realismo */
+  /* box-shadow: 0 15px 40px rgba(219, 145, 159, 0.4); */
+  box-shadow: 0 10px 50px rgba(255, 175, 189, 0.25);
+  border-radius: 15px;
+ cursor: url('./img/bolsamsbr.png') 16 16, auto;
 }
 .menu-content .menu-list .menu-item .menu-image {
   max-width: 83%;
