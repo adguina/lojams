@@ -11,7 +11,7 @@
   --degrade: rgb(228, 190, 193);
   --fundo-menu: rgb(255, 255, 255);
   --cor-link: #ff1493;
-
+  --ico-mao: url("./img/ico-mao.png") 16 16, auto;
   /* fonte size */
   --font-size-s: 0.9rem;
   --font-size-n: 1rem;
@@ -61,6 +61,49 @@ header {
   border-radius: 10px;
   background: #6a5acd;
 }
+
+/* Icone whatsapp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+
+  width: 50px;
+  height: 50px;
+
+  background: linear-gradient(145deg, #111, #2a2a2a);
+  color: #f5f5f5;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+
+  z-index: 9999;
+  text-decoration: none;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease,
+    color 0.35s ease;
+}
+
+.whatsapp-float:hover {
+  background: linear-gradient(145deg, #1ebf73, #128c7e); /* verde elegante */
+  color: #ffffff;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 14px 35px rgba(111, 66, 193, 0.28),
+    /* roxinho suave */ inset 0 1px 2px rgba(255, 255, 255, 0.15);
+}
+
 /* Estilo Nav-Bar */
 .logo-text {
   font-family: "Miniver", cursive;
@@ -82,8 +125,17 @@ header {
     /* linha 1 */ 0 10px 8px rgba(255, 20, 147, 0.25),
     /* linha 2 */ 0 15px 12px rgba(255, 20, 147, 0.15); /* linha 3 */
 }
+.navbar h2 {
+  transition: transform 0.9s ease;
+}
+
+.navbar h2:hover {
+  cursor: var(--ico-mao);
+  transform: translateX(6px); /* desloca suavemente */
+}
+
 .navbar .img-logo:hover {
-  cursor: url("./img/mouse.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 
 .navbar .nav-logo .logo-text {
@@ -120,7 +172,7 @@ header .navbar {
   color: var(--white-color);
   background: var(--degrade);
   border: 1px solid var(--white-color);
-  cursor: url("./img/mouse.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 
 .navbar :where(#menu-close-button, #menu-open-button) {
@@ -176,7 +228,7 @@ header .navbar {
   color: var(--white-color);
   background: #6a5acd;
   border: solid 2px transparent;
-  cursor: url("./img/mouse.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 /* imagem */
 .hero-image-wrapper {
@@ -213,7 +265,7 @@ header .navbar {
 /* Toque final: animação de zoom suave no hover (opcional) */
 .hero-image-wrapper:hover img {
   transform: scale(1.08);
-  cursor: url("./img/mouse.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 /* fim da imagem */
 
@@ -227,7 +279,7 @@ header .navbar {
 .hero-section .hero-image-wrapper:hover {
   transform: scale(1.15);
   /* box-shadow: 0 0 30px 10px #6a5acd; */
-  cursor: url("./img/bolsamsbr.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 
 /* About section styling */
@@ -274,7 +326,7 @@ header .navbar {
   color: white;
   border: 1px solid var(--cor-link);
   border-radius: 100%;
-  cursor: url("./img/mouse.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 /* Inicio Menu  Section */
 /* .menu-content .menu-list .menu-item .menu-image {
@@ -310,7 +362,7 @@ header .navbar {
   /* box-shadow: 0 15px 40px rgba(219, 145, 159, 0.4); */
   box-shadow: 0 10px 50px rgba(255, 175, 189, 0.25);
   border-radius: 15px;
-  cursor: url("./img/bolsamsbr.png") 16 16, auto;
+  cursor: var(--ico-mao);
 }
 .menu-content .menu-list .menu-item .menu-image {
   max-width: 83%;
