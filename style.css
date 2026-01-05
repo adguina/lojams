@@ -570,6 +570,11 @@ header .navbar {
 	.menu-section .menu-list .menu-item {
 		width: 100%;
 	}
+
+	.menu-bag .swiper-button-prev,
+	.menu-bag .swiper-button-next {
+		background: #ffffff;
+	}
 }
 /* Fim Responsive media query code for max width 640px - Menu Section*/
 /* continua 40:59 */
