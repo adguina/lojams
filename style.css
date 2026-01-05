@@ -420,8 +420,14 @@ header .navbar {
 }
 .menu-bag .swiper-button-prev,
 .menu-bag .swiper-button-next {
-	color: #ffffff;
+	background: linear-gradient(120deg, #ffffff 0%, #ffd6e8 50%, #f3a1c8 100%);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
 }
+
 .menu-bag .swiper-button-prev:hover,
 .menu-bag .swiper-button-next:hover {
 	cursor: var(--ico-mao);
