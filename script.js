@@ -12,7 +12,7 @@ menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 // Iniciar Swiper
 document.addEventListener("DOMContentLoaded", () => {
     new Swiper(".menu-bag .swiper", {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
 
         navigation: {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 3,
             },
             2048: {
-                slidesPerView: 3,
+                slidesPerView: 4,
             },
         },
     });
