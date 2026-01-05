@@ -428,12 +428,12 @@ header .navbar {
 /* Fim menu-bag */
 
 /* Responsive media query code for max width 1080px - Menu Section*/
-@media screen and (max-width: 2048) {
+@media screen and (max-width: 2048px) {
 	.menu-section .menu-list .menu-item {
 		width: calc(100% / 4 - 60px);
 	}
 }
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
 	.menu-section .menu-list {
 		gap: 60px;
 	}
