@@ -396,7 +396,9 @@ header .navbar {
 	object-fit: cover;
 	margin-bottom: 50px;
 	padding: 30px;
-	border: 1px solid white;
+	border: 1px solid #ffffff;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6),
+		0 8px 20px rgba(233, 30, 99, 0.25);
 	border-radius: 50%;
 }
 .menu-bag .bag .name {
@@ -423,6 +425,24 @@ header .navbar {
 .menu-bag .swiper-button-prev:hover,
 .menu-bag .swiper-button-next:hover {
 	cursor: var(--ico-mao);
+}
+/* afasta as setas navegacao */
+.menu-bag .swiper {
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+.menu-bag .swiper-button-prev,
+.menu-bag .swiper-button-next {
+	z-index: 10;
+}
+
+.menu-bag .swiper-button-prev {
+	left: 10px;
+}
+
+.menu-bag .swiper-button-next {
+	right: 10px;
 }
 
 /* Fim menu-bag */
