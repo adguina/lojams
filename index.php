@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Bolsa MS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!--link Swiper Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- icone do whatsapp -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank"
+        title="📱 Fale com um de nossos 👤 representantes no WhatsApp 💬 " aria-label="Fale conosco pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Header / navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">
+                    <img class="img-logo" src="./img/logoms (1).png" /> Monica Sanches
+                </h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Teste</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+    <main>
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Bolsas Femenina</h2>
+                    <h3 class="subtitle">Uma bolsa para cada momento!</h3>
+                    <p class="description">
+                        Bem-vinda à Mônica Sanches! Aqui você vai encontrar bolsas que
+                        unem elegância, praticidade e estilo para todos os momentos.
+                        Descubra modelos exclusivos pensados para realçar a sua
+                        personalidade todos os dias.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Order Now</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="./img/ms2.jpg" alt="bolsa" / class="hero-image">
+                </div>
+            </div>
+        </section>
+        <!-- end hero section -->
+        <!-- About section -->
+        <section class="about-section">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="./img/bolsasms1.jpg" alt="Sobre MS" class="about-image" />
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="text">
+                        Monica Sanches Bolsas é uma marca consagrada de bolsas e
+                        acessórios femininos,
+                        nascida em Itatiba–SP, que há mais de três décadas traduz com
+                        maestria a essência da feminilidade da mulher brasileira.
+                        Com um design moderno, autoral e inconfundível, a marca se destaca
+                        pela combinação harmoniosa entre beleza, praticidade e
+                        sofisticação.
+                        Ao longo de sua trajetória, consolidou presença em lojas de rua e
+                        shoppings, sempre oferecendo peças que refletem personalidade,
+                        elegância e o estilo único que tornou Monica Sanches referência no
+                        universo da moda feminina.
+                    </p>
+                    <div class="social-link-list">
+                        <a href class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+        </section>
+        <!-- Fim section -->
+        <!-- Menu section -->
+        <section class="menu-section">
+            <h2 class="section-title">Vitrine</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="img/B02.png" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B02.png" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B03.png" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B02.png" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B08.jpg" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B02.png" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B10.jpg" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B09.jpg" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="img/B07.jpg" alt class="menu-image" />
+                        <h3 class="name">Bolsa Monica Sanches</h3>
+                        <p class="text">Bolsa moda femenina e descontraida para todas
+                            ocasioes</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Fim Menu section -->
+        <!-- Menu bag -->
+        <section class="menu-bag">
+            <h2 class="section-title">Destaques</h2>
+
+            <div class="section-content">
+                <div class="slider-container swiper">
+
+                    <!-- swiper-wrapper PRECISA ser filho direto -->
+                    <ul class="bags-list swiper-wrapper">
+                        <?php include_once 'bag-list.php' ?>
+                    </ul>
+
+                    <!-- Controles -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Fim Menu bag -->
+    </main>
+    <!-- Link Swiper script -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link Swiper custom -->
+    <script src="script.js"></script>
+</body>
+
+</html>

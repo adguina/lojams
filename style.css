@@ -422,7 +422,7 @@ header .navbar {
 }
 .menu-bag .swiper-button-prev:hover,
 .menu-bag .swiper-button-next:hover {
-	cursor: var(--ico-mao);
+  cursor: var(--ico-mao);
 }
 
 /* Fim menu-bag */
