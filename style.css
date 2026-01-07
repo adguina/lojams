@@ -40,6 +40,23 @@ img {
 }
 header {
 	background: var(--degrade);
+	position: relative;
+}
+
+header::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 2px;
+
+	background: linear-gradient(
+		to bottom,
+		rgba(243, 161, 200, 0.8) 0%,
+		rgba(255, 255, 255, 0.9) 100%
+	);
 }
 .section-content {
 	margin: o auto;
@@ -110,7 +127,8 @@ header {
 		/* 2ª camada – mais difusa */ 0px 8px 12px rgba(255, 20, 147, 0.2);
 	/* 3ª camada – glow mais leve */
 }
-
+.navbar {
+}
 .navbar .img-logo {
 	margin-right: 20px;
 	width: 40px;
